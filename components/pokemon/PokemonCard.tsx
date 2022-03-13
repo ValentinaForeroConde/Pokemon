@@ -9,7 +9,7 @@ interface Props {
 export const PokemonCard: FC<Props> = ({ pokemon: { id, img, name } }) => {
 
   const onClick = () => {
-    Router.push(`/pokemon/${id}`);
+    Router.push(`/name/${name}`);
   };
   return (
     <Grid xs={6} sm={3} md={2} xl={1} key={id}>
